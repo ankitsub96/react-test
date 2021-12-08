@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let a=[1,2]
+  let b=[...a]
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +19,17 @@ function App() {
         >
           Learn React
         </a>
+        <p>es6 syntax::</p>
+        <ol>
+        {a.map(el=>{
+          return <li>{el}</li>
+        })}
+        </ol>
+        <ol>
+        {b.map(el=>{
+          return <li>{el}</li>
+        })}
+        </ol>
       </header>
     </div>
   );
